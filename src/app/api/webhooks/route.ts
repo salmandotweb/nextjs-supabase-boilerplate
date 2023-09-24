@@ -1,8 +1,13 @@
 import Stripe from 'stripe';
 import { NextResponse } from 'next/server';
 import { headers } from 'next/headers';
-import { stripe } from '@/lib/stripe';
-import { manageSubscriptionStatusChange, upsertPriceRecord, upsertProductRecord } from '@/lib/supabaseAdmin';
+
+import { stripe } from '../../../lib/stripe';
+import {
+    upsertProductRecord,
+    upsertPriceRecord,
+    manageSubscriptionStatusChange
+} from "../../../lib/supabaseAdmin";
 
 const relevantEvents = new Set([
     'product.created',
@@ -27,8 +32,8 @@ export async function POST(
     let event: Stripe.Event;
 
     try {
-        if (!sig || !webhookSecret) return;
-        event = stripe.webhooks.constructEvent(body, sig, webhookSecret);
+        // if (!sig || !webhookSecret) return;
+        event = stripe.webhooks.constructEvent(body, sig!, webhookSecret!);
     } catch (err: any) {
         console.log(`❌ Error message: ${err.message}`);
         return new NextResponse(`Webhook Error: ${err.message}`, { status: 400 });
