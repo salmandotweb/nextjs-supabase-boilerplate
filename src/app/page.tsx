@@ -6,7 +6,7 @@ import Header from "@/sections/Header";
 
 export default function Home() {
 	return (
-		<main className="px-24">
+		<main className="sm:w-[90%] md:w-[90%] lg:w-[80%] xl:w-[77%] mx-auto">
 			<Navbar />
 			<Header />
 			<Features />
