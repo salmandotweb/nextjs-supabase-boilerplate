@@ -16,11 +16,7 @@ const Header = () => {
 					professionals.
 				</h1>
 				<Link href="/builder">
-					<Button
-						size="sm"
-						className="bg-secondary text-primary hover:bg-slate-200">
-						Build My Resume Now
-					</Button>
+					<Button size="sm">Build My Resume Now</Button>
 				</Link>
 			</div>
 			<div className="flex items-center justify-end w-[50%]">

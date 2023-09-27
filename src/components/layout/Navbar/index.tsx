@@ -5,11 +5,11 @@ import { useState } from "react";
 
 const links = [
 	{
-		label: "Features",
+		label: "Products",
 		href: "/",
 	},
 	{
-		label: "Featured Template",
+		label: "About Us",
 		href: "/",
 	},
 	{
