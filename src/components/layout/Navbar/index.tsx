@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -9,7 +8,11 @@ const links = [
 		href: "/",
 	},
 	{
-		label: "About Us",
+		label: "Benefit",
+		href: "/",
+	},
+	{
+		label: "How it Works",
 		href: "/",
 	},
 	{
@@ -17,13 +20,8 @@ const links = [
 		href: "/",
 	},
 	{
-		label: "Reviews",
+		label: "Company",
 		href: "/",
-	},
-	{
-		label: "Get Started",
-		href: "/builder",
-		button: true,
 	},
 ];
 
@@ -38,29 +36,31 @@ const Navbar = () => {
 					aria-label="Company"
 					title="Company"
 					className="inline-flex items-center">
-					<span className="ml-2 text-xl font-bold tracking-wide uppercase">
+					<span className="text-xl font-bold tracking-wide uppercase">
 						LOGO.
 					</span>
 				</Link>
-				<ul className="hidden items-center space-x-8 lg:flex">
-					{links.map((link) =>
-						link.button ? (
-							<Button variant="default" key={link.label}>
-								<Link href={link.href}>{link.label}</Link>
-							</Button>
-						) : (
-							<li key={link.label}>
-								<Link
-									href={link.href}
-									aria-label={link.label}
-									title={link.label}
-									className="font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400">
-									{link.label}
-								</Link>
-							</li>
-						)
-					)}
+				<ul className="hidden items-center gap-12 lg:flex">
+					{links.map((link) => (
+						<li key={link.label}>
+							<Link
+								href={link.href}
+								aria-label={link.label}
+								title={link.label}
+								className="tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400">
+								{link.label}
+							</Link>
+						</li>
+					))}
 				</ul>
+				<div className="lg:flex items-center gap-4 hidden">
+					<Button variant="ghost">
+						<Link href="/">Login</Link>
+					</Button>
+					<Button variant="default">
+						<Link href="/">Get Demo</Link>
+					</Button>
+				</div>
 				<div className="lg:hidden">
 					<button
 						aria-label="Open Menu"
