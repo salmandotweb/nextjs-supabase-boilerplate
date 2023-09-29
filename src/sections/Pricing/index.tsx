@@ -25,6 +25,7 @@ interface Feature {
 
 const Pricing = () => {
 	const [pricingData, setPricingData] = useState<Pricing[]>(data);
+	const [isYearly, setIsYearly] = useState(true);
 
 	return (
 		<div className="flex flex-col items-center justify-center gap-2 py-[100px]">
@@ -34,7 +35,12 @@ const Pricing = () => {
 			</p>
 			<div className="flex items-center gap-4 mt-6">
 				<p className="text-[16px] font-medium">Monthly </p>
-				<Switch checked />
+				<Switch
+					checked={isYearly}
+					onCheckedChange={(value) => {
+						setIsYearly(value);
+					}}
+				/>
 				<p className="text-[16px] font-medium">Yearly</p>
 			</div>
 			<div className="mt-2 relative">
@@ -48,7 +54,7 @@ const Pricing = () => {
 				</div>
 			</div>
 
-			<div className="flex items-start gap-6 mt-8 w-[70%]">
+			<div className="flex items-start gap-6 mt-8 justify-center flex-wrap">
 				{pricingData?.map((pricing, index) => {
 					return <PricingCard key={index} {...pricing} />;
 				})}
