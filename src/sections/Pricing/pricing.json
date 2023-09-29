@@ -1,0 +1,111 @@
+[
+	{
+		"type": "monthly",
+		"title": "Free",
+		"icon": "/images/pricing/free.svg",
+		"subTitle": "Perfect plan to get started",
+		"pricing": "0",
+		"pricingUnit": "$",
+		"description": "A free plan grants you access to some cool features of Spend.In.",
+		"features": [
+			{
+				"name": "Sync accross device",
+				"isIncluded": true
+			},
+			{
+				"name": "5 workspace",
+				"isIncluded": true
+			},
+			{
+				"name": "Collaborate with 5 user",
+				"isIncluded": true
+			},
+			{
+				"name": "Sharing permission",
+				"isIncluded": false
+			},
+			{
+				"name": "Admin tools",
+				"isIncluded": false
+			},
+			{
+				"name": "100+ integrations",
+				"isIncluded": false
+			}
+		],
+		"button": "Get Your Free Plan"
+	},
+	{
+		"type": "monthly",
+		"title": "Pro",
+		"icon": "/images/pricing/pro.svg",
+		"subTitle": "Perfect plan to get started",
+		"pricing": "12",
+		"pricingUnit": "$",
+		"description": "A free plan grants you access to some cool features of Spend.In.",
+		"popular": true,
+		"features": [
+			{
+				"name": "Everything in Free Plan",
+				"isIncluded": true
+			},
+			{
+				"name": "Unlimited workspace",
+				"isIncluded": true
+			},
+			{
+				"name": "Collaborative workspace",
+				"isIncluded": true
+			},
+			{
+				"name": "Sharing permission",
+				"isIncluded": true
+			},
+			{
+				"name": "Admin tools",
+				"isIncluded": true
+			},
+			{
+				"name": "100+ integrations",
+				"isIncluded": true
+			}
+		],
+		"button": "Get Started"
+	},
+	{
+		"type": "monthly",
+		"title": "Ultimate",
+		"icon": "/images/pricing/ultimate.svg",
+		"subTitle": "Perfect plan to get started",
+		"pricing": "33",
+		"pricingUnit": "$",
+		"description": "A free plan grants you access to some cool features of Spend.In.",
+		"features": [
+			{
+				"name": "Everything in Pro Plan",
+				"isIncluded": true
+			},
+			{
+				"name": "Daily performance reports",
+				"isIncluded": true
+			},
+			{
+				"name": "Dedicated assistant",
+				"isIncluded": true
+			},
+			{
+				"name": "Artificial intelligence",
+				"isIncluded": true
+			},
+			{
+				"name": "Marketing tools & automations",
+				"isIncluded": true
+			},
+			{
+				"name": "Advanced security",
+				"isIncluded": true
+			}
+		],
+		"button": "Get Started"
+	}
+]

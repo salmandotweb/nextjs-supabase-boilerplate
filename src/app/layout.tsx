@@ -5,7 +5,7 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import SupabaseProvider from "@/providers/SupabaseProvider";
 import UserProvider from "@/providers/UserProvider";
 
-const inter = Plus_Jakarta_Sans({ subsets: ["latin"] });
+const font = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
 	title: "AI2SaaS",
@@ -19,7 +19,7 @@ export default async function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={inter.className}>
+			<body className={font.className}>
 				<ThemeProvider
 					attribute="class"
 					defaultTheme="light"
