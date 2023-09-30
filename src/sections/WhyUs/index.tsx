@@ -43,7 +43,7 @@ const WhyUs: React.FC = () => {
 				</h2>
 			</div>
 
-			<Tabs defaultValue="account" className="w-full">
+			<Tabs defaultValue="with" className="w-full">
 				<TabsList>
 					<TabsTrigger value="with">With Career</TabsTrigger>
 					<TabsTrigger value="without">Without Career</TabsTrigger>

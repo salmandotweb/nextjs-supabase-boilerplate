@@ -44,7 +44,7 @@ const HowItWorks: React.FC = ({}) => {
 
 			<div className="flex items-center justify-center gap-4">
 				<Button>Get a Free Demo</Button>
-				<Button variant="secondary">See Pricing</Button>
+				<Button variant="outline">See Pricing</Button>
 			</div>
 		</div>
 	);
