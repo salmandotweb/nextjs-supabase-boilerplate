@@ -2,6 +2,7 @@
 
 import Navbar from "@/components/layout/Navbar";
 import Header from "@/sections/Header";
+import HowItWorks from "@/sections/HowItWorks";
 import Pricing from "@/sections/Pricing";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
 				<Navbar />
 				<Header />
 			</div>
+			<HowItWorks />
 			<Pricing />
 		</main>
 	);
