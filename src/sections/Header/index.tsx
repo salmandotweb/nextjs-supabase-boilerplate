@@ -17,12 +17,14 @@ const Header = () => {
 				<Button variant="secondary">See Pricing</Button>
 			</div>
 
-			<Image
+			<div className="min-h-[852px] w-[1200px] bg-slate-800 rounded-lg" />
+
+			{/* <Image
 				src="/images/Dashboard.png"
 				alt="Dashboard"
 				width={1200}
 				height={852}
-			/>
+			/> */}
 		</div>
 	);
 };

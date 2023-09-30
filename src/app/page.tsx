@@ -4,6 +4,7 @@ import Navbar from "@/components/layout/Navbar";
 import Header from "@/sections/Header";
 import HowItWorks from "@/sections/HowItWorks";
 import Pricing from "@/sections/Pricing";
+import WhyUs from "@/sections/WhyUs";
 
 export default function Home() {
 	return (
@@ -13,6 +14,7 @@ export default function Home() {
 				<Header />
 			</div>
 			<HowItWorks />
+			<WhyUs />
 			<Pricing />
 		</main>
 	);
