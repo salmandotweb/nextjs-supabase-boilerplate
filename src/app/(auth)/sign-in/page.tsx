@@ -6,9 +6,20 @@ import {
 	useSessionContext,
 	useSupabaseClient,
 } from "@supabase/auth-helpers-react";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
 const SignIn = () => {
 	const supabaseClient = useSupabaseClient();
+	const { session } = useSessionContext();
+
+	const router = useRouter();
+
+	useEffect(() => {
+		if (session) {
+			router.refresh();
+		}
+	}, [session, router]);
 
 	return (
 		<div className="grid grid-cols-2 items-center min-h-screen">

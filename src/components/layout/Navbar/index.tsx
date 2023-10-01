@@ -1,4 +1,6 @@
 import { Button } from "@/components/ui/button";
+import { useUser } from "@/hooks/useUser";
+import { useSupabaseClient } from "@supabase/auth-helpers-react";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -28,6 +30,17 @@ const links = [
 const Navbar = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+	const supabaseClient = useSupabaseClient();
+
+	const { user } = useUser();
+
+	const handleLogout = async () => {
+		const { error } = await supabaseClient.auth.signOut();
+		if (error) {
+			console.log(error);
+		}
+	};
+
 	return (
 		<div className="py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-3xl">
 			<div className="relative flex items-center justify-between">
@@ -54,12 +67,25 @@ const Navbar = () => {
 					))}
 				</ul>
 				<div className="lg:flex items-center gap-4 hidden">
-					<Button variant="ghost">
-						<Link href="/sign-in">Login</Link>
-					</Button>
-					<Button variant="default">
-						<Link href="/">Get Demo</Link>
-					</Button>
+					{!user ? (
+						<>
+							<Button variant="ghost">
+								<Link href="/sign-in">Login</Link>
+							</Button>
+							<Button variant="default">
+								<Link href="/">Get Demo</Link>
+							</Button>
+						</>
+					) : (
+						<>
+							<Button variant="ghost">
+								<Link href="/dashboard">Dashboard</Link>
+							</Button>
+							<Button variant="default" onClick={handleLogout}>
+								Logout
+							</Button>
+						</>
+					)}
 				</div>
 				<div className="lg:hidden">
 					<button
