@@ -17,7 +17,7 @@ const SignIn = () => {
 
 	useEffect(() => {
 		if (session) {
-			router.refresh();
+			router.push("/");
 		}
 	}, [session, router]);
 
