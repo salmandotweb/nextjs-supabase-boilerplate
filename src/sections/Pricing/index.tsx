@@ -28,7 +28,9 @@ const Pricing = () => {
 	const [isYearly, setIsYearly] = useState(true);
 
 	return (
-		<div className="flex flex-col items-center justify-center gap-2">
+		<div
+			className="flex flex-col items-center justify-center gap-2"
+			id="pricing">
 			<h1 className="text-3xl font-semibold">Ready to Get Started?</h1>
 			<p className="text-[20px]">
 				Choose a plan that suits your business needs

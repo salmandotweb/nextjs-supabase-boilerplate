@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 const Header = () => {
 	return (
@@ -14,7 +15,9 @@ const Header = () => {
 			</p>
 			<div className="flex items-center justify-center gap-6 mb-[50px]">
 				<Button variant="default">Get a Free Demo</Button>
-				<Button variant="secondary">See Pricing</Button>
+				<Button variant="secondary">
+					<Link href="/#pricing">See Pricing</Link>
+				</Button>
 			</div>
 
 			<div className="min-h-[852px] w-[1200px] bg-slate-800 rounded-lg" />
