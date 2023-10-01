@@ -55,7 +55,7 @@ const Navbar = () => {
 				</ul>
 				<div className="lg:flex items-center gap-4 hidden">
 					<Button variant="ghost">
-						<Link href="/">Login</Link>
+						<Link href="/sign-in">Login</Link>
 					</Button>
 					<Button variant="default">
 						<Link href="/">Get Demo</Link>
