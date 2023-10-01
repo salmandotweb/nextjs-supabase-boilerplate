@@ -17,7 +17,7 @@ const data = [
 
 const HowItWorks: React.FC = ({}) => {
 	return (
-		<div className="flex flex-col items-center justify-center gap-16 min-h-[80vh] text-center">
+		<div className="flex flex-col items-center justify-start gap-16 min-h-[70vh] text-center">
 			<div className="flex flex-col items-center justify-center gap-2">
 				<p className="font-semibold uppercase text-primary">How it works?</p>
 				<h1 className="text-[40px] font-semibold">Few Easy Steps and Done</h1>

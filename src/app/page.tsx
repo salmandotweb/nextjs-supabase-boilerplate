@@ -2,6 +2,7 @@
 
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
+import Benefits from "@/sections/Benefits";
 import Header from "@/sections/Header";
 import HowItWorks from "@/sections/HowItWorks";
 import Pricing from "@/sections/Pricing";
@@ -15,6 +16,7 @@ export default function Home() {
 				<Navbar />
 				<Header />
 			</div>
+			<Benefits />
 			<HowItWorks />
 			<WhyUs />
 			<Testimonials />
