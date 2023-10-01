@@ -38,7 +38,9 @@ const Benefits: React.FC = () => {
 
 			<div className="flex flex-wrap items-start justify-between gap-4 w-full">
 				{data.map((item, index) => (
-					<div className="flex flex-col items-start gap-4 w-[384px]">
+					<div
+						className="flex flex-col items-start gap-4 w-[384px]"
+						key={index}>
 						<div className="min-h-[384px] w-[384px] bg-slate-800 rounded-lg"></div>
 						<div className="flex flex-col items-start justify-start gap-2">
 							<p className="font-semibold uppercase text-primary text-lg">
