@@ -1,5 +1,6 @@
 "use client";
 
+import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
 import Header from "@/sections/Header";
 import HowItWorks from "@/sections/HowItWorks";
@@ -18,6 +19,7 @@ export default function Home() {
 			<WhyUs />
 			<Testimonials />
 			<Pricing />
+			<Footer />
 		</main>
 	);
 }
