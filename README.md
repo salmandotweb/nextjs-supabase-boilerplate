@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<img width="1670" alt="Screenshot 2023-10-02 at 10 18 27 PM" src="https://github.com/salmandotweb/nextjs-supabase-boilerplate/assets/74504762/fa7d4c9a-855d-4a3d-9a6d-38cf2badff60">
 
-## Getting Started
+# Next.js Supabase Stripe Tailwindcss Boilerplate   
+I have created this boilerplate using next.js, supabase for authentication, and stripe for payments.
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🧐 What's included    
+- Authentication
+- Row-level security
+- Card payments
+- Landing page
+- Protected routes
+## 🛠️ Tech Stack
+- [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Supabase](https://supabase.com/)
+## 🍰 Contributing    
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Before contributing, please read the [code of conduct](CODE_OF_CONDUCT.md) & [contributing guidelines](CONTRIBUTING.md).
+        
+        
+    
+        
+## ❤️ Support  
+A simple star to this project repo is enough to keep me motivated on this project for days. If you find your self very much excited with this project let me know with a tweet.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+If you have any questions, feel free to reach out to me on [Twitter](https://twitter.com/salmandotweb
+## 🙇 Author
+#### Salmandotweb
+- Twitter: [@salmandotweb](https://twitter.com/salmandotweb)
+- Github: [@salmandotweb](https://github.com/salmandotweb
+## ➤ License
+Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
